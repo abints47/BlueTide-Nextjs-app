@@ -4,7 +4,7 @@ BlueTide is a modern beach review web application built with **Next.js**. It all
 
 ## 🌐 Live Demo
 
-👉 https://beach-c3oshuqca-948635.vercel.app
+👉 https://beach-bluetide.vercel.app/
 
 ## ✨ Features
 
