@@ -48,3 +48,6 @@ body {
 
 
 
+.about-image{
+  display: block; box-sizing: border-box; padding-top: 10%;
+}
