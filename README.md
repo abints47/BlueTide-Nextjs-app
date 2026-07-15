@@ -1,36 +1,100 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🌊 BlueTide
 
-## Getting Started
+BlueTide is a modern beach review web application built with **Next.js**. It allows users to discover beautiful beaches, explore detailed information, and share reviews and ratings through a clean, responsive interface.
 
-First, run the development server:
+## 🌐 Live Demo
+
+👉 https://beach-c3oshuqca-948635.vercel.app
+
+## ✨ Features
+
+- 🏖️ Browse beautiful beach destinations
+- ⭐ View beach ratings and reviews
+- 📝 Submit beach reviews
+- 📱 Fully responsive design
+- ⚡ Fast performance with Next.js
+- 🎨 Clean and modern UI
+- 🔍 Explore beach details
+
+## 🛠️ Tech Stack
+
+- Next.js
+- React
+- TypeScript
+- CSS Modules
+- Vercel (Deployment)
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- Node.js (v18 or later)
+- npm or yarn
+
+### Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/<your-username>/bluetide-nextjs-app.git
+```
+
+Navigate to the project directory:
+
+```bash
+cd bluetide-nextjs-app
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Start the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open your browser and visit:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```
+http://localhost:3000
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 📂 Project Structure
 
-## Learn More
+```
+bluetide-nextjs-app/
+├── app/
+├── components/
+├── public/
+├── styles/
+├── utils/
+└── README.md
+```
 
-To learn more about Next.js, take a look at the following resources:
+## 🚀 Deployment
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+The project is deployed on **Vercel**.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+**Live Website:**
 
-## Deploy on Vercel
+https://beach-c3oshuqca-948635.vercel.app
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 📸 Screenshots
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+> Add screenshots of your application here.
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome. Feel free to fork the repository and submit a pull request.
+
+## 📄 License
+
+This project is licensed under the MIT License.
+
+---
+
+Made with ❤️ using Next.js.
