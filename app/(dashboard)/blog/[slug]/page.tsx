@@ -22,11 +22,13 @@ export default async function PostPage({ params }: Props) {
       <p className="text-sm text-gray-400 text-center mb-8">{post.date}</p>
 
       {post.image && (
-        <div className="relative w-full h-100 rounded-xl overflow-hidden mb-10 mx-auto shadow-sm">
+        <div className="relative w-full h-100  rounded-xl overflow-hidden mb-10 mx-auto shadow-sm">
           <Image
             src={post.image}
             alt={post.title}
             fill
+            priority //
+             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
             className="object-cover"
           />
         </div>
