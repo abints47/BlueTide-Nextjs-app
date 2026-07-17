@@ -2,13 +2,14 @@
 import Image from "next/image";
 import about_image from "@/app/images/about-image.jpg";
 import about_image1 from "@/app/images/about-image1.jpg"
+import Faqs from "@/app/components/Accordion";
 
 export default function(){
     return(
         <>
         <div className="pt-10 px-10 pb-4 md:grid md:grid-cols-2 md:gap-x-16 lg:gap-x-8 mb-10 md:mb-14">
-          <h1 className="text-6xl md:text-5xl font-bold text-center tracking-tighter leading-tight md:pr-8 text-[#2B2B28]">
-            about page
+          <h1 className="text-6xl md:text-5xl font-bold text-center  tracking-tighter leading-tight md:pr-8 text-[#2B2B28]">
+            About page
           </h1>
         </div>
 
@@ -60,7 +61,10 @@ export default function(){
                 sometimes on purpose (injected humour and the like).
         </p>
 
+        <Faqs/>
+
     </div>
+    
 
            
         </>
