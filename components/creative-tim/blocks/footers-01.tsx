@@ -31,7 +31,7 @@ export default function Footers01() {
               </a>
             </Button>
             <Button asChild variant="ghost" size="icon" className="h-8 w-8">
-              <a href="#" aria-label="GitHub">
+              <a href="https://github.com/abints47" aria-label="GitHub">
                 <Github className="h-4 w-4" />
               </a>
             </Button>

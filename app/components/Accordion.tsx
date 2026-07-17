@@ -31,23 +31,31 @@ const items = [
       "Defenitely. Reach out through the Contact page with your ideas or email to the official link:- We love hearing from readers ",
   },
 ]
-
 export default function AccordionCard() {
   return (
-    <Card className="flex justify-center px-6 ">
-      <CardHeader className="w-full max-w-md bg-gray-100 border border-gray-200 rounded-2xl p-6 mx-auto">
-        <CardTitle className="font-extrabold text-2xl font-serif ">FAqs</CardTitle>
-      </CardHeader>
-      <CardContent className="w-full max-w-md bg-gray-100 border border-gray-200 rounded-2xl p-6 mx-auto ">
-        <Accordion defaultValue={["plans"]} className=" font-serif ">
-          {items.map((item) => (
-            <AccordionItem key={item.value} value={item.value}>
-              <AccordionTrigger>{item.trigger}</AccordionTrigger>
-              <AccordionContent>{item.content}</AccordionContent>
-            </AccordionItem>
-          ))}
-        </Accordion>
-      </CardContent>
-    </Card>
-  )
+    <div className="flex justify-center px-6 pb-10">
+      <Card className="w-full max-w-3xl bg-gray-100 border border-gray-200 rounded-2xl">
+        <CardHeader className="p-6">
+          <CardTitle className="font-serif text-2xl font-bold">
+            FAQs
+          </CardTitle>
+        </CardHeader>
+        <CardContent className="p-6 pt-0">
+          <Accordion defaultValue={["plans"]} className="font-serif">
+            {items.map((item) => (
+              <AccordionItem key={item.value} value={item.value}>
+                <AccordionTrigger className="font-serif text-lg text-gray-700">
+                  {item.trigger}
+                </AccordionTrigger>
+                <AccordionContent className="font-serif text-base text-gray-500 leading-relaxed">
+                  {item.content}
+                </AccordionContent>
+              </AccordionItem>
+            ))}
+          </Accordion>
+        </CardContent>
+      </Card>
+    </div>
+  );
 }
+

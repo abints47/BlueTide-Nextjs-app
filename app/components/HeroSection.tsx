@@ -19,14 +19,14 @@ export default function Home() {
       {/* Centered text on top of the image */}
       <div className="absolute inset-0 flex items-center justify-center px-6">
         <div className="w-full max-w-xl text-center">
-          <p className="text-sm tracking-[0.3em] uppercase text-white/80 mb-4">
+          <p className="text-2xl tracking-[0.3em] uppercase text-white/80 mb-4 ">
             Welcome to
           </p>
           <h1 className="text-6xl font-bold tracking-tighter text-white mb-6">
             Bluetide
           </h1>
-          <p className="text-white/90 leading-relaxed mb-10">
-            Stories from the shoreline — hidden beaches, slow mornings, and the
+          <p className="text-white/90 leading-relaxed mb-10 text-lg">
+            Stories from the shoreline,  hidden beaches, slow mornings, and the
             small rituals that make everyday life feel a little more like a
             getaway.
           </p>
