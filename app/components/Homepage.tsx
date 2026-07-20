@@ -42,23 +42,21 @@ export default function Homepage() {
   return (
     <>
       <main>
-        <div className="container mx-auto px-5 font-sans text-lg md:text-xl leading-relaxed tracking-wide antialiased">
+        <div className="mx-auto max-w-[1800px] px-4 sm:px-6 md:px-10 lg:px-16 xl:px-24 font-sans text-base sm:text-lg md:text-xl leading-relaxed tracking-wide antialiased">
           {homepageData.map((item, index) => {
-            // Respect the original padding logic
+            // Respect the original padding logic, scaled down on mobile
             const gridContainerClass = index === 2 
-              ? "p-7 md:grid md:grid-cols-2 md:gap-x-16 lg:gap-x-8 mb-20 md:mb-28" 
-              : "md:grid md:grid-cols-2 md:gap-x-16 lg:gap-x-8 mb-20 md:mb-28";
+              ? "p-4 sm:p-7 md:grid md:grid-cols-2 md:gap-x-16 lg:gap-x-8 mb-16 md:mb-28" 
+              : "md:grid md:grid-cols-2 md:gap-x-16 lg:gap-x-8 mb-16 md:mb-28";
 
-            // Added "rounded-md overflow-hidden" to the wrapper so corners never overflow/leak out
-            const imageWrapperClass = index === 0 
-              ? "image-container rounded-md overflow-hidden mb-8 md:mb-16" 
-              : "image-container rounded-md overflow-hidden";
+            // Consistent, larger gap below the image for every item
+            const imageWrapperClass = "image-container rounded-md overflow-hidden mb-10 sm:mb-14 md:mb-20";
 
             return (
               <div key={index}>
                 {/* Category Header */}
-                <section className="flex-col md:flex-row flex items-center md:justify-between mt-16 mb-16 md:mb-12">
-                  <h1 className="text-6xl md:text-8xl font-bold tracking-tighter leading-tight md:pr-8 text-[#2B2B28]">
+                <section className="flex-col md:flex-row flex items-center md:justify-between mt-10 sm:mt-16 mb-8 sm:mb-16 md:mb-12">
+                  <h1 className="text-4xl sm:text-6xl md:text-8xl font-bold tracking-tighter leading-tight text-center md:text-left md:pr-8 text-[#2B2B28]">
                     {item.category}
                   </h1>
                 </section>
@@ -71,21 +69,22 @@ export default function Homepage() {
                     className="rounded-md object-cover w-full h-auto" // Added w-full h-auto for proper sizing
                     src={item.imageSrc} 
                     decoding="async"
+                    sizes="100vw"
                   />
                 </div>
 
                 {/* Content Grid */}
                 <div className={gridContainerClass}>
                   <div>
-                    <h3 className="mb-4 text-4xl lg:text-6xl leading-tight">
+                    <h3 className="mb-3 sm:mb-4 text-2xl sm:text-4xl lg:text-6xl leading-tight">
                       <Link href={item.linkUrl}>{item.linkTitle}</Link>
                     </h3>
-                    <div className="mb-4 md:mb-0 text-lg">
+                    <div className="mb-4 md:mb-0 text-sm sm:text-lg">
                       <time>{item.date}</time>
                     </div>
                   </div>
                   <div>
-                    <p className="pl-15 text-lg leading-8 mb-4 text-justify">
+                    <p className="pl-0 md:pl-8 lg:pl-15 text-base sm:text-lg leading-7 sm:leading-8 mb-4 text-justify">
                       {item.description}
                     </p>
                   </div>
