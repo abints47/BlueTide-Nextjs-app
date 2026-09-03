@@ -38,41 +38,50 @@ BlueTide is a travel and lifestyle blog built with **Next.js**, sharing stories 
 ### Installation
 
 Clone the repository:
+
 ```bash
 git clone https://github.com/<your-username>/bluetide-nextjs-app.git
 ```
 
 Navigate to the project directory:
+
 ```bash
 cd bluetide-nextjs-app
 ```
 
 Install dependencies:
+
 ```bash
 npm install
 ```
 
 Set up your environment variables — create a `.env` file at the project root:
+
 ```env
 DATABASE_URL=your_postgres_connection_string
 ```
 
 Push the database schema:
+
 ```bash
 npx prisma db push
 ```
 
 Start the development server:
+
 ```bash
 npm run dev
 ```
 
 Open your browser and visit:
 
+```
 http://localhost:3000
+```
 
 ## 📂 Project Structure
 
+```
 bluetide-nextjs-app/
 ├── app/
 │   ├── page.tsx              # Landing page
@@ -91,6 +100,7 @@ bluetide-nextjs-app/
 ├── public/
 │   └── images/                 # Post covers, hero images
 └── README.md
+```
 
 ## 🚀 Deployment
 
