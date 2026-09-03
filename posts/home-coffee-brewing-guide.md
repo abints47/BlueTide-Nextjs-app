@@ -2,8 +2,9 @@
 title: "Brewing Cafe-Quality Coffee at Home"
 date: "2026-06-28"
 excerpt: "The simple techniques that separate mediocre coffee from something truly great."
-image : "/images/posts/coffee.jpg"
-
+image: "/images/posts/coffee.jpg"
+tags: ["Lifestyle", "Coffee", "Home"]
+category: "Lifestyle"
 ---
 ## It's Not About Expensive Equipment
 You don't need a $2,000 espresso machine to make excellent coffee. Most of the improvement comes from a handful of fundamentals.

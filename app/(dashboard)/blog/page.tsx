@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { getSortedPostsData } from "@/lib/posts";
 import Image from 'next/image';
+import TagBadges from '@/app/components/TagBadges';
 
 
 export default function Blog() {
@@ -13,7 +14,7 @@ export default function Blog() {
       </h1>
 
       <ul className="space-y-12">
-        {posts.map(({ slug, title, date, excerpt ,image}) => (
+        {posts.map(({ slug, title, date, excerpt, image, tags, category }) => (
 
           <li key={slug} className="text-center">
             
@@ -34,6 +35,9 @@ export default function Blog() {
             </Link>
             <p className="text-sm text-gray-400 mt-2">{date}</p>
             <p className="text-gray-500 mt-3 leading-relaxed">{excerpt}</p>
+            <div className="flex justify-center mt-4">
+              <TagBadges tags={tags || [category || "Travel"]} />
+            </div>
           </li>
         ))}
       </ul>

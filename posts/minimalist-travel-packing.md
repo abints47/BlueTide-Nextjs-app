@@ -3,6 +3,8 @@ title: "The Art of Packing Light: A Minimalist's Travel Guide"
 date: "2026-07-10"
 excerpt: "Learn how to travel the world with just a carry-on and never miss a thing."
 image: "/images/posts/image1.jpg"
+tags: ["Travel", "Minimalism", "Packing"]
+category: "Travel"
 ---
 ## Why Less Is More
 Every seasoned traveler eventually learns the same lesson: the less you carry, the more freedom you have. No checked baggage fees, no lost luggage anxiety, no lugging a heavy suitcase up cobblestone streets.

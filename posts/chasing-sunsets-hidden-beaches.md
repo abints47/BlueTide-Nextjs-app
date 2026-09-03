@@ -3,6 +3,8 @@ title: "Chasing Sunsets: 5 Hidden Beaches You Must Visit This Year"
 date: "2026-07-16"
 excerpt: "Escape the crowds and discover pristine white sands, crystal-clear turquoise waters, and untouched coastal paradises."
 image: "/images/posts/sunset.jpg"
+tags: ["Beach", "Travel", "Sunsets"]
+category: "Beach"
 ---
 ## The Call of the Ocean
 There is something inherently magical about leaving your footprints on a shore untouched by commercial tourism. While famous resort beaches have their charm, the true adventurer craves something a bit more secluded. 

@@ -10,11 +10,15 @@ type PostFrontmatter = {
   title: string;
   date: string;
   excerpt: string;
-  image:string;
+  image: string;
+  tags?: string[];
+  category?: string;
 };
 
 export type PostMeta = PostFrontmatter & {
   slug: string;
+  tags?: string[];
+  category?: string;
 };
 
 export function getSortedPostsData(): PostMeta[] {

@@ -1,8 +1,8 @@
 
-import Image from "next/image";
 import about_image from "@/app/images/about-image.jpg";
 import about_image1 from "@/app/images/about-image1.jpg"
 import Faqs from "@/app/components/Accordion";
+import ImageLightbox from "@/app/components/ImageLightbox";
 
 export default function(){
     return(
@@ -22,23 +22,23 @@ export default function(){
         
         {/* Image 1 Container (Portrait) */}
         <div className="relative w-full h-180 md:h-600px">
-          <Image
+          <ImageLightbox
             src={about_image}
             alt="Portrait image"
             fill
-            className="object-cover  shadow-md relative w-full h-600 rounded-2xl overflow-hidden transition-all duration-500 hover:scale-[1.02] hover:shadow-[0_0_40px_rgba(56,189,248,0.5)]"
+            className="object-cover shadow-md relative w-full h-600 rounded-2xl overflow-hidden transition-all duration-500 hover:scale-[1.02] hover:shadow-[0_0_40px_rgba(56,189,248,0.5)]"
             sizes="(max-w-7xl) 100vw, 50vw"
             priority
           />
         </div>  
 
         {/* Image 2 Container (Landscape) */}
-        <div className="relative w-full h-180 md:h-600px ">
-          <Image
+        <div className="relative w-full h-180 md:h-600px">
+          <ImageLightbox
             src={about_image1}
             alt="Landscape image"
             fill
-            className="object-cover  shadow-md relative w-full h-600 rounded-2xl overflow-hidden transition-all duration-500 hover:scale-[1.02] hover:shadow-[0_0_40px_rgba(56,189,248,0.5)]"
+            className="object-cover shadow-md relative w-full h-600 rounded-2xl overflow-hidden transition-all duration-500 hover:scale-[1.02] hover:shadow-[0_0_40px_rgba(56,189,248,0.5)]"
             sizes="(max-w-7xl) 100vw, 50vw"
           />
         </div>

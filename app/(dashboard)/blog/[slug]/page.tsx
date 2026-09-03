@@ -1,5 +1,8 @@
 import Image from "next/image";
 import { getPostData, getAllPostSlugs } from '@/lib/posts';
+import SocialShare from '@/app/components/SocialShare';
+import TagBadges from '@/app/components/TagBadges';
+import RelatedPosts from '@/app/components/RelatedPosts';
 
 type Props = {
   params: Promise<{ slug: string }>;
@@ -13,6 +16,7 @@ export async function generateStaticParams() {
 export default async function PostPage({ params }: Props) {
   const { slug } = await params;
   const post = await getPostData(slug);
+  const tags = post.tags || [post.category || "Travel"];
 
   return (
     <article className="max-w-5xl mx-auto px-6 py-20">
@@ -34,10 +38,17 @@ export default async function PostPage({ params }: Props) {
         </div>
       )}
 
+      <div className="flex items-center justify-between mb-10">
+        <TagBadges tags={tags} />
+        <SocialShare title={post.title} />
+      </div>
+
       <div
         className="prose prose-neutral mx-auto leading-relaxed text-[#2B2B28]"
         dangerouslySetInnerHTML={{ __html: post.contentHtml }}
       />
+
+      <RelatedPosts currentSlug={slug} />
     </article>
   );
 }
